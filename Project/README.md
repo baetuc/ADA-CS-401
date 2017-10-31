@@ -17,7 +17,6 @@ What is the power of a presidential tweet? We hope that we will have more insigh
 * Does the political regiment affect such negative behavior on a larger scale?
 
 ## Dataset
-List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
 
 ### Trump tweets
 * Downloading the complete dataset locally and processing the JSON files
@@ -29,14 +28,16 @@ List the dataset(s) you want to use, and some ideas on how do you expect to get,
   * number of favorites
   * number of followers
 ### GDELT
-* We would use GDELT Event Database coupled with Global Knowledge graph to gain insights on events:
+* We would use GDELT Global Knowledge graph to gain insights on events:
   * geolocalized to USA
-  * in specified timeframe
+  * in specified timeframe, starting from 2013
   * specific events, such as protests or violent manifestations
+  * will need knowledge on working on the cluster and accessing the data
 ### Wikidata
 * Obtaining data for social-economical indicators:
   * for a specific period of time
   * for a specific region of the USA
+  * data wrangling and processing
 
 ### Obama tweets *
 Available at: http://obamawhitehouse.gov.archivesocial.com/

@@ -1,5 +1,4 @@
-# The power of 140 characters
-
+# Trump - a 140 character insight
 
 ## Abstract
 

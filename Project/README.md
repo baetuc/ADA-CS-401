@@ -49,3 +49,6 @@ Therefore, we adapted the scope of the research, continuing on the topic of insi
 
 ## Remarks for the TA team
 We are thankful for insights provided by the professor and the TA team who have helped make our project feasable in scope.
+
+## Online NB viewer link
+http://nbviewer.jupyter.org/github/baetuc/ADA-CS-401/blob/master/Project/Project.ipynb

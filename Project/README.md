@@ -34,6 +34,11 @@ Therefore, we adapted the scope of the research, continuing on the topic of insi
 ### Internet archive - Trump TV news factchecks
 * Used for enriching the dataset - answering the final research question - more details in the notebook
 
+## List of contributions
+* Viktor: initial data analysis (general Trump Tweets: geolocation, followers over time, device used to tweet, trend on retweets and favorites; Internet archive - Trump TV news factchecks), news+twitter dataset work and insights. Initial plotly plots and github page base+writeup of the part worked on.
+* Cip:
+* Doru:
+
 ## A list of internal milestones up until project milestone 3
 * Finalizing the data analysis
 * Further exploring options for Natural Language Processing

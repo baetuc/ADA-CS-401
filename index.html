@@ -49,43 +49,161 @@
     <div class="container">
       <div class="row row-offcanvas row-offcanvas-right">
         <div class="col-sm-10 blog-main">
-          <div class="jumbotron" style="background-color:#c0deed">
-            <h1 id="insights">You are being watched</h1>
-            <img class="img-responsive" src="Project/images/social_media.jpeg"/>
-            <p align="justify">Social media has become omnipresent and we (un)intentionally leave increasingly more information about ourselves: our opinions, habits, interests and beliefs.
-            The president of the United States is famous for being an avid Twitter user. What can we find out from his Tweets?</p>
+          <div class="jumbotron" >
+            <h1 id="insights">You are being watched!</h1>
+            <img class="img-responsive" src="Project/images/social_media.jpeg" style="margin-top:20px; margin-bottom:20px;"/>
+            <p align="justify">
+              Social media has become omnipresent and we (un)intentionally leave increasingly more information about ourselves: our opinions, habits, interests and beliefs.
+            </p>
+            <p align="justify">
+              The president of the United States is famous for being an avid Twitter user.
+              He is swift to express his opinion directly in a sometimes very raw manner.
+            </p>
+            <img class="img-responsive" src="Project/data/crooked_hilary.png" style="margin-top:20px; margin-bottom:20px;"/>
+            <p align="justify">
+              This habit of regular commenting on events and persons is a good opportunity to ask:
+              what insights can we gather from 140 characters of typed by POTUS?
+            </p>
           </div>
 
           <div class="container-fluid">
-            <h1 id="why">Why do we do this?</h1>
+            <div class="row" style="margin-top:40px;">
+              <h1 id="why">Why POTUS Tweets?</h1>
+              <p align="justify">
+                The President of the United States is a person with great power and control over the events in the world.
+                He is a representative of the state which is one of the major players in world stability: peace, economy, science and developmet among others.
+              </p>
+              <img class="img-responsive" src="Project/data/kim.png" style="margin-top:20px; margin-bottom:20px;"/>
+              <p align="justify">
+                With great power comes great responsibility, as the president should represent a role model for the nation, while being under constant scrutiny
+                of public and media. Donald Trump's Twitter feed represents an unique insight into mindset and opinions of a leader of a nation and a successful businessman.
+                Without hesitation and careful diplomatic consideration he is posting his opinions freely. In that freedom we also find inspiration to explore what might
+                he reveal about himself and find out more about @realDonaldTrump.
+              </p>
+            </div>
 
-            <p align="justify">
+            <div class="row" style="margin-top:40px;">
+              <h1 id="analysis">You are being watched!</h1>
+              <p align="justify">
+                What we publish on the Web does not disappear. This is a very important consequence for social media and our online presence.
+                Even if we seemingly delete an unfortunate image or post, chance is, it is still stored somewhere. This is emphasized to the extremes in cases of
+                celebrities and people of power, such as Donald Trump. Here we see a famous gaffe: a late night "covfefe" tweet. He has deleted the Tweet afterwards,
+                but it was already too late - everyone was talking about it.
+              </p>
+              <img class="img-responsive" src="Project/images/covfefe.jpg" style="margin-top:20px; margin-bottom:20px;"/>
+              <p align="justify">
+                In a similar fashion, Tweets are directly accessible to the public. Our opinions from many years, or a late night rant or drunken post - it is saved somewhere.
+                This is only one example of information we leave online: interactions, logs, likes and different metadata is also present to represent our online identity.
+              </p>
 
+              <div class="row" style="margin-top:40px; margin-bottom:40px;">
+                <div class="col justify-content-center">
+                  <figure class="figure">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Project/html/tweet_map.html"></iframe>
+                    </div>
+                    <figcaption class="figure-caption">
+                      Map of the places in the world Donald Trump has tweeted from.
+                      Geodata has been subsequently disabled in most of the tweets.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
 
-            </p>
+              <p align="justify">
+                We will use the public availability of Donald Trump tweets to gather some insights on his use of Twitter, his habits, reactions and sentiment throughout the years.
+                Moreover, we will look from different approaches his reactions to the news articles about him or his cabinet in the White House.
+              </p>
 
-            <h1 id="analysis">You are being watched</h1>
-            <h2 id="devices">Devices being used to post Tweets</h2>
-            <h2 id="dev_popularity">User engagement</h2>
+              <h2 id="devices" style="margin-top:20px;">Who posts from @realDonaldTrump</h2>
+              <p align="justify">
+                Donald Trump is a businessman, celebrity, media personality and a president. From the emergence of his Twitter account in 2009. he has posted many tweets, but it is
+                certain that he has social media managers for elements of his media presence.
+              </p>
+              <div class="row" style="margin-bottom:40px;">
+                <div class="col justify-content-center">
+                  <figure class="figure">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Project/html/utilities_posted.html"></iframe>
+                    </div>
+                    <figcaption class="figure-caption">
+                      Distribution of the devices used to post Tweets.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <p align="justify">
+                The majority of the tweets were posted from Android, which is a device of choice for mr. Trump. We can see other utilities,
+                such as iPhone or Web Client being prominent as well. Since Donald Trump has been noted to
+                <a href="http://fortune.com/2017/01/01/trump-doesnt-trust-computers/">rarely use computers</a>
+                we can for now assume the posts he made are originating from Android. That is a significant amount of Tweets that are approved,
+                but not directly penned by Donald Trump.
+              </p>
+              <div class="row" style="margin-bottom:40px;">
+                <div class="col justify-content-center">
+                  <figure class="figure">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Project/html/utilities_daily_frequency.html"></iframe>
+                    </div>
+                    <figcaption class="figure-caption">
+                      Tweet frequency by Android and iPhone devices
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <p align="justify">
+                Since becoming POTUS, many concerns were raised for using an insecure Android device. Thus, Trump has
+                <a href="https://www.theguardian.com/technology/2017/mar/20/bye-bye-android-has-donald-trump-finally-upgraded-his-phone">switched to iPhone</a>.
 
-            <h1 id="news">In the news: Trump and his Administration</h1>
-            <h2 id="topics">What is this administration about</h2>
+                This is visible from the Twitter data as well: the last Tweet posted from Android is on <b>25th of March, 2017</b>, keeping his promise of using a more secure device.
+                Seeing that iPhone has been used before as well in parallel, it could be either his social media maganers or himself.
 
-            <h1 id="react">Trump reacting?</h1>
-            <h2 id="tweet_news">What is in the news on certain tweet topics?</h2>
-            <h2 id="news_tweet">What is in the tweets on certain news topics?</h2>
+              </p>
 
+              <h2 id="dev_popularity" style="margin-top:20px;">User engagement</h2>
+              <p align="justify">
+
+              </p>
+            </div>
+
+            <div class="row" style="margin-top:40px;">
+              <h1 id="news">In the news: Trump and his Administration</h1>
+              <p align="justify">
+
+              </p>
+
+              <h2 id="topics" style="margin-top:20px;">What is this administration about</h2>
+              <p align="justify">
+
+              </p>
+            </div>
+
+            <div class="row" style="margin-top:40px;">
+              <h1 id="react">Trump reacting?</h1>
+              <p align="justify">
+
+              </p>
+
+              <h2 id="tweet_news" style="margin-top:20px;">What is in the news on certain tweet topics?</h2>
+              <p align="justify">
+
+              </p>
+
+              <h2 id="news_tweet" style="margin-top:20px;">What is in the tweets on certain news topics?</h2>
+              <p align="justify">
+
+              </p>
+            </div>
 
               <div class="row">
                 <div class="col justify-content-center">
-                  <figure class="figure col">
+                  <figure class="figure">
                     <div class="embed-responsive embed-responsive-16by9">
                       <iframe class="embed-responsive-item" src="Project/html/top_topics2009.html"></iframe>
                     </div>
                     <figcaption class="figure-caption">A caption for the above graph.</figcaption>
                   </figure>
                 </div>
-
               </div>
 
               <div class="row">

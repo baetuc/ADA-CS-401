@@ -38,7 +38,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#datastory">Data Story</a></li>
+            <li><a href="#datastory">Data Story</a></li>
             <li><a href="#datasets">Datasets</a></li>
             <li><a href="#about">About</a></li>
           </ul>
@@ -46,7 +46,7 @@
       </div><!-- /.container -->
     </nav>
 
-    <div class="container">
+    <div class="container" id="datastory">
       <div class="row row-offcanvas row-offcanvas-right">
         <div class="col-sm-10 blog-main">
           <div class="jumbotron" >
@@ -595,13 +595,18 @@
             <div class="row" style="margin-top:40px;">
               <h1 id="news_tweet">What is in the tweets on certain news topics?</h1>
               <p align="justify">
-
+                We want to show the opposite now, when selected news topics are aired, what topics are in the Trump's Twitter feed.
+                This might provide a more detailed insight on what he tweets about, whom he mentions or tags.
+                <br /> <br />
+                Without certainty and formal testing, we presume that such behavior might be about deflecting and diminishing certain topics,
+                by mentioning provocative topics, calling out his opponents or asserting patriotism.
               </p>
 
               <!--RUSSIA FBI-->
               <h2 id="russia_fbi" style="margin-top:20px;">In news: Russia and FBI</h2>
               <p align="justify">
-
+                We explore one especially unpleasant set of topics for Donald Trump: Russia and FBI.
+                Displayed are the news occurences over time containing either of two terms.
               </p>
 
               <div class="row" style="margin-bottom:40px;">
@@ -617,8 +622,20 @@
                 </div>
               </div>
 
+              <p align="justify">
+                We display the occurrence of two topics from the tweets appearing up to 2 days after the news airing:
+                <ul>
+                  <li>
+                    Mention: CNN
+                  </li>
+                  <li>
+                    Hashtag: MAGA (Make America Great Again)
+                  </li>
+                </ul>
+              </p>
+
               <!--MAGA CNN-->
-              <h2 id="maga" style="margin-top:20px;">MAGA, CNN!</h2>
+              <h2 id="maga" style="margin-top:20px;">MAGA, CNN - easy response?</h2>
               <p align="justify">
 
               </p>
@@ -650,7 +667,15 @@
               <!--TREND OF REACTION-->
               <h2 id="reaction" style="margin-top:20px;">Trend of reaction, peculiarity?</h2>
               <p align="justify">
-
+                We put some of the highest occurrences of tweet topics in context with the news on topics of Russia and FBI as topics:
+                <ul>
+                  <li>
+                    Mentions: CNN, DRUDGE_REPORT (Drudge report is an American conservative right-wing news aggregation website)
+                  </li>
+                  <li>
+                    Hashtags: MAGA, MakeAmericaGreatAgain
+                  </li>
+                </ul>
               </p>
               <div class="row" style="margin-bottom:40px;">
                 <div class="col justify-content-center">
@@ -665,6 +690,19 @@
                   </figure>
                 </div>
               </div>
+              <p align="justify">
+                We can observe that after significant number of news topics with Russia, CNN or MAGA is mentioned.
+                Our presumption is that these responses might be to discredit the news outlets, while enforcing high level of patriotism
+                in contrast to Russian implications - in order to diminish the importance of the news.
+                <br /><br />
+                More apparently with FBI news topic, there is a sudden spike in CNN and DRUDGE_REPORT mentions, showing that Trump reacts
+                directly by referencing right-wing news aggregation website along with CNN.
+
+                <br /><br />
+                In order to make direct conclusions, we would have to consult pshycologicsts, news analysts, politicologists and experts in
+                social media and social sciences to provide a definite conclusion. Based on the data, we show the peculiarities we have observed, along
+                with our presumptions. It is an insight - not a ground truth or hypothesis.
+              </p>
 
 
               </div>
@@ -677,9 +715,37 @@
       </div>
     </div>
 
+    <div class="container" id="datasets">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-sm-10 blog-main">
+          <h1 style="margin-top:50px;">Datasets</h1>
+          <p align="justify">
+            This project utilizes two datasets:
+            <ul>
+              <li>
+                <a href="http://www.trumptwitterarchive.com/">Trump Twitter Archive</a>
+              </li>
+              <li>
+                <a href="archive.org/details/tv?factchecks">Fact Checked TV News Archive</a>
+              </li>
+            </ul>
+            The main objective was to utilize datasets with highest possible ground truth for further analysis.
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <script>
-    //  $('body').scrollspy({ target: '#navbar1' })
-    </script>
+    <div class="container" id="about" >
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-sm-10 blog-main">
+          <h1 style="margin-top:50px;">About</h1>
+          <p align="justify">
+            This project has been done as part of Applied Data Analysis (CS-401) course at EPFL, winter 2017.
+
+            Code is available in the <a href="https://github.com/baetuc/ADA-CS-401/tree/master/Project">GitHub repository</a>.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

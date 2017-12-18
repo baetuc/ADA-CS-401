@@ -1,23 +1,138 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Trump - Insights in 140 characters</title>
-  <meta name="description" content="ADA Project">
-  <meta name="author" content="Sanca, Baetu, Musuroi">
+    <link rel="icon" type="image/png" href="Project/images/logo.png" />
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <title>Trump - Insights in 140 characters</title>
+    <meta name="description" content="ADA Project">
+    <meta name="author" content="Sanca, Baetu, Musuroi">
 
-</head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="Project/css/bootstrap-toc.css" />
+    <link rel="stylesheet" href="Project/css/navbar.css" />
+    <link rel="stylesheet" href="Project/css/blog.css" />
 
-<body>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+
+  </head>
+
+  <body data-spy="scroll" data-target="#toc" style="padding-top: 70px;">
+
+    <nav id="main_nav" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" style="padding: 0px;"><img src="Project/images/logo.png" style="height: 100%; width: auto;"/></a>
+          <a class="navbar-brand" href="#">rump - Insights in 140 characters</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#datastory">Data Story</a></li>
+            <li><a href="#datasets">Datasets</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <div class="container">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-sm-10 blog-main">
+          <div class="jumbotron" style="background-color:#c0deed">
+            <h1 id="insights">You are being watched</h1>
+            <img class="img-responsive" src="Project/images/social_media.jpeg"/>
+            <p align="justify">Social media has become omnipresent and we (un)intentionally leave increasingly more information about ourselves: our opinions, habits, interests and beliefs.
+            The president of the United States is famous for being an avid Twitter user. What can we find out from his Tweets?</p>
+          </div>
+
+          <div class="container-fluid">
+            <h1 id="why">Why do we do this?</h1>
+
+            <p align="justify">
 
 
-  <h1>Hello world!</h1>
-</body>
+            </p>
+
+            <h1 id="analysis">You are being watched</h1>
+            <h2 id="devices">Devices being used to post Tweets</h2>
+            <h2 id="dev_popularity">User engagement</h2>
+
+            <h1 id="news">In the news: Trump and his Administration</h1>
+            <h2 id="topics">What is this administration about</h2>
+
+            <h1 id="react">Trump reacting?</h1>
+            <h2 id="tweet_news">What is in the news on certain tweet topics?</h2>
+            <h2 id="news_tweet">What is in the tweets on certain news topics?</h2>
+
+
+              <div class="row">
+                <div class="col justify-content-center">
+                  <figure class="figure col">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Project/html/top_topics2009.html"></iframe>
+                    </div>
+                    <figcaption class="figure-caption">A caption for the above graph.</figcaption>
+                  </figure>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First Name</th>
+                      <th scope="col">Last Name</th>
+                      <th scope="col">Username</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+    //  $('body').scrollspy({ target: '#navbar1' })
+    </script>
+  </body>
 </html>

@@ -1,751 +1,956 @@
 <!doctype html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" type="image/png" href="Project/images/logo.png" />
+  <link rel="icon" type="image/png" href="Project/images/logo.png" />
 
-    <title>Trump - Insights in 140 characters</title>
-    <meta name="description" content="ADA Project">
-    <meta name="author" content="Sanca, Baetu, Musuroi">
+  <title>Trump - Insights in 140 characters</title>
+  <meta name="description" content="ADA Project">
+  <meta name="author" content="Sanca, Baetu, Musuroi">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <link rel="stylesheet" href="Project/css/bootstrap-toc.css" />
-    <link rel="stylesheet" href="Project/css/navbar.css" />
-    <link rel="stylesheet" href="Project/css/blog.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="Project/css/bootstrap-toc.css" />
+  <link rel="stylesheet" href="Project/css/navbar.css" />
+  <link rel="stylesheet" href="Project/css/blog.css" />
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
 
-  </head>
+</head>
 
-  <body data-spy="scroll" data-target="#toc" style="padding-top: 70px;">
+<body data-spy="scroll" data-target="#toc" style="padding-top: 70px;">
 
-    <nav id="main_nav" class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#" style="padding: 0px;"><img src="Project/images/logo.png" style="height: 100%; width: auto;"/></a>
-          <a class="navbar-brand" href="#">rump - Insights in 140 characters</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#datastory">Data Story</a></li>
-            <li><a href="#datasets">Datasets</a></li>
-            <li><a href="#about">About</a></li>
-          </ul>
-        </div><!-- /.nav-collapse -->
-      </div><!-- /.container -->
-    </nav>
-
-    <div class="container" id="datastory">
-      <div class="row row-offcanvas row-offcanvas-right">
-        <div class="col-sm-10 blog-main">
-          <div class="jumbotron" >
-            <h1 id="insights">You are being watched!</h1>
-            <img class="img-responsive" src="Project/images/social_media.jpeg" style="margin-top:20px; margin-bottom:20px;"/>
-            <p align="justify">
-              Social media has become omnipresent and we (un)intentionally leave increasingly more information about ourselves: our opinions, habits, interests and beliefs.
-            </p>
-            <p align="justify">
-              The president of the United States is famous for being an avid Twitter user.
-              He is swift to express his opinion directly in a sometimes very raw manner.
-            </p>
-            <img class="img-responsive" src="Project/data/crooked_hilary.png" style="margin-top:20px; margin-bottom:20px;"/>
-            <p align="justify">
-              This habit of regular commenting on events and persons is a good opportunity to ask:
-              what insights can we gather from 140 characters of typed by POTUS?
-            </p>
-          </div>
-
-          <!--WHY POTUS TWEETS?-->
-          <div class="container-fluid">
-            <div class="row" style="margin-top:40px;">
-              <h1 id="why">Why POTUS Tweets?</h1>
-              <p align="justify">
-                The President of the United States is a person with great power and control over the events in the world.
-                He is a representative of the state which is one of the major players in world stability: peace, economy, science and developmet among others.
-              </p>
-              <img class="img-responsive" src="Project/data/kim.png" style="margin-top:20px; margin-bottom:20px;"/>
-              <p align="justify">
-                With great power comes great responsibility, as the president should represent a role model for the nation, while being under constant scrutiny
-                of public and media. Donald Trump's Twitter feed represents an unique insight into mindset and opinions of a leader of a nation and a successful businessman.
-                Without hesitation and careful diplomatic consideration he is posting his opinions freely. In that freedom we also find inspiration to explore what might
-                he reveal about himself and find out more about @realDonaldTrump.
-              </p>
-            </div>
-
-            <!--DATA HAS IT ALL-->
-            <div class="row" style="margin-top:40px;">
-              <h1 id="analysis">Data has it all</h1>
-              <p align="justify">
-                What we publish on the Web does not disappear. This is a very important consequence for social media and our online presence.
-                Even if we seemingly delete an unfortunate image or post, chance is, it is still stored somewhere. This is emphasized to the extremes in cases of
-                celebrities and people of power, such as Donald Trump. Here we see a famous gaffe: a late night "covfefe" tweet. He has deleted the Tweet afterwards,
-                but it was already too late - everyone was talking about it.
-              </p>
-              <img class="img-responsive" src="Project/images/covfefe.jpg" style="margin-top:20px; margin-bottom:20px;"/>
-              <p align="justify">
-                In a similar fashion, Tweets are directly accessible to the public. Our opinions from many years, or a late night rant or drunken post - it is saved somewhere.
-                This is only one example of information we leave online: interactions, logs, likes and different metadata is also present to represent our online identity.
-              </p>
-
-              <div class="row" style="margin-top:40px; margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/tweet_map.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Map of the places in the world Donald Trump has tweeted from.
-                      Geodata has been subsequently disabled in most of the tweets.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-              <p align="justify">
-                We will use the public availability of Donald Trump tweets to gather some insights on his use of Twitter, his habits, reactions and sentiment throughout the years.
-                Moreover, we will look from different approaches his reactions to the news articles about him or his cabinet in the White House.
-              </p>
-
-              <!--WHO POSTS FROM @REAL DONALD TRUMP-->
-              <h2 id="devices" style="margin-top:20px;">Who posts from @realDonaldTrump</h2>
-              <p align="justify">
-                Donald Trump is a businessman, celebrity, media personality and a president. From the emergence of his Twitter account in 2009. he has posted many tweets, but it is
-                certain that he has social media managers for elements of his media presence.
-              </p>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/utilities_posted.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Distribution of the devices used to post Tweets.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <p align="justify">
-                The majority of the tweets were posted from Android, which is a device of choice for mr. Trump. We can see other utilities,
-                such as iPhone or Web Client being prominent as well. Since Donald Trump has been noted to
-                <a href="http://fortune.com/2017/01/01/trump-doesnt-trust-computers/">rarely use computers</a>
-                we can for now assume the posts he made are originating from Android. That is a significant amount of Tweets that are approved,
-                but not directly penned by Donald Trump.
-              </p>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/utilities_daily_frequency.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Tweet frequency by Android and iPhone devices
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <p align="justify">
-                Since becoming POTUS, many concerns were raised for using an insecure Android device. Thus, Trump has
-                <a href="https://www.theguardian.com/technology/2017/mar/20/bye-bye-android-has-donald-trump-finally-upgraded-his-phone">switched to iPhone</a>.
-
-                This is visible from the Twitter data as well: the last Tweet posted from Android is on <b>25th of March, 2017</b>, keeping his promise of using a more secure device.
-                Seeing that iPhone has been used before as well in parallel, it could be either his social media maganers or himself.
-              </p>
-
-              <!--USER ENGAGEMENT-->
-              <h2 id="dev_popularity" style="margin-top:20px;">User engagement</h2>
-              <p align="justify">
-                How did becoming a POTUS change the landscape of interaction of users with his Tweets? Let us find out!
-                We count favoriting a tweet and retweeting different metrics of level of interaction.
-              </p>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/favorite_rt_count_time.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Engagement of the users over time - Favorites and Retweets
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <p align="justify">
-                It is evident that since <a href="https://www.theguardian.com/us-news/2015/jun/16/donald-trump-announces-run-president">declaring candidacy</a>
-                on June 16th, 2015, his Twitter account has seen a steady increase in interactions - signs of undergoing campaign and supporters flowing in.
-                A sharp peak can be seen in November 2016 - exactly when the US presidential elections that Trump won took place.
-              </p>
-
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/android_favorite_rt_count_time.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Engagement of the users over time - Favorites and Retweets for Tweets from Android device
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <p align="justify">
-                Comparing the devices used to post: Android and iPhone, we can observe slight differences.
-                If we consider Trump using his Android phone until March (when there is a halt from that device), iPhone has been used
-                presumably by his social media and campaing managers to promote him as a candidate.
-                <br />
-                <br />
-                In general more popular tweets have come from Donald Trump himself, notable popular examples suggest presidential victory.
-                and inauguration as important events, besides other peaks that can be observed.
-                After March 2017, it is more difficult to track the author
-                solely by relying on the presumption of the device used.
-              </p>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/iphone_favorite_rt_count_time.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Engagement of the users over time - Favorites and Retweets for Tweets from iPhone device
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-
-            <!--IN THE NEWS: TRUMP AND HIS ADMINISTRATION-->
-            <div class="row" style="margin-top:40px;">
-              <h1 id="news">In the news: Trump and his Administration</h1>
-              <p align="justify">
-                Being a public persona, businessman and politician has enabled Trump to leave his mark on the news:
-                interviews, reports and a variety of press coverage.
-                <br /><br />
-                We can gain an insight on what has Trump opinionated on strongly enough that it has managed to reach the news.
-                From businessman and a TV personality to politician and president - we can gain insights on interests and critique
-                of Donald Trump and his closest associates. This can also give an insight on his political agenda, as well as
-                shed light on issues that either trouble his presidency or he actively tackles.
-              </p>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/top50_topics.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Top 50 topics from the news including Trump and his Cabinet - from 2009 to 2017
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-              <!--NEWS TOPICS OVER THE YEARS-->
-              <h2 id="topics_years" style="margin-top:20px;">News topics over the years</h2>
-              <p align="justify">
-                A historical insight shows the best the evolution of interests of Donald Trump, reflected in the news.
-                From 2009 when the data has been first collected, we can observe that number of topics has been growing over time:
-                Donald Trump engaging more into public life besides entertainment. Likewise, the variety of topics is increasing as well,
-                - close with his political or personal agenda.
-              </p>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/top_topics2009.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Top 20 news topics of Trump in 2009.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/top_topics2010.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Top 20 news topics of Trump in 2010.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/top_topics2011.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Top 20 news topics of Trump in 2011.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/top_topics2012.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Top 20 news topics of Trump in 2012.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/top_topics2013.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Top 20 news topics of Trump in 2013.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/top_topics2014.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Top 20 news topics of Trump in 2014.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/top_topics2015.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Top 20 news topics of Trump in 2015.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/top_topics2016.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Top 20 news topics of Trump in 2016.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/top_topics2017.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Top 20 news topics of Trump and his Cabinet in 2017.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-              <!--WHAT IS THIS ADMINISTRATION ABOUT?-->
-              <h2 id="topics_cabinet" style="margin-top:20px;">What is this administration about?</h2>
-              <p align="justify">
-                News cover not only the statements of politicians, but also provides a critique and other reports in connection to them.
-                One such example is the <a href="https://www.theguardian.com/us-news/2017/dec/16/republicans-trying-to-kill-off-trump-russia-investigation-says-adam-schiff">Russian-ties investigation</a>
-                or some legal issues that have been brought up.
-                <br /><br />
-                We show the top 20 topics in the news that have appeared since Donald Trump taking office in 2017.
-              </p>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/top_10_administration_news.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Top 20 news topics of the Trump administration - since taking office from 20th of January, 2017.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <p align="justify">
-                We can see the political agenda clearly: immigrants and homeland security being the first topic,
-                while crime and Russia also take a significant place in the distribution of the news topics.
-              </p>
-            </div>
-
-            <!--WHAT IS IN THE NEWS ON CERTAIN TWEET TOPICS-->
-            <div class="row" style="margin-top:40px;">
-              <h1 id="tweet_news">What is in the news on certain tweet topics?</h1>
-              <p align="justify">
-                Since his Twitter feed is a free outlet of his thoughts and opinions, we are interested if we can observe certain trends
-                in reaction to the topics of the news. Social media and social herding has a very powerful effect Trump must be aware of,
-                can we observe if he uses his online voice to strengthen his position among his followers and create a context that
-                is different from the news reports.
-                <br />
-                <br />
-                We will look into what topics are in the news when he tweets about certain topics: hashtags, mentions or simply parts of tweets
-                that containt a defined phrase.
-              </p>
-
-              <!--FAKE NEWS-->
-              <h2 id="fake" style="margin-top:20px;">Fake news?</h2>
-              <p align="justify">
-                <i>Fake news</i> has become an infamous term used by Donald Trump frequently to discard news and lable media outlets as "fake".
-                These reactions are usually to news coverage that is not benevolent towards policies and critique his stances and appriaches.
-                We can notice that "fake news" has emerged since end of 2016 - just about when he was to take the office as POTUS.
-                The frequency has been relatively spread out, with certain significant mentions from the news appearing on the days with most frequent "fake news" tweets:
-                <ul>
-                  <li>
-                    September 30th 2017 - criticism on Puerto Rican hurricane response and Alabama preliminaries.
-                  </li>
-                  <li>
-                    August 7th 2017 - 200 days of Trump Administration
-                  </li>
-                  <li>
-                    May 28th 2017 - Montana special Congressional race
-                  </li>
-                </ul>
-              </p>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/fake_tweet_freq.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Frequency of Tweets containing text <i>fake news</i> or hashtags: <i>FNN</i>, <i>FakeNews</i>, <i>FraudNewsCNN</i>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-              <p align="justify">
-                After we have localized the tweets containing "fake news" as a topic, we will show what topics in the news occur in the
-                immediate time period of 1 day after publishing such tweets.
-              </p>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/topics1days_fake.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Topics in the news up to 1 day from <i>fake news</i> tweets.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-              <p align="justify">
-                To see whether the news topic has been significant, we will also check all the news topics 5 days after the publishing
-                of the "fake news" tweets, in practical terms - what is the more average distribution of news in that period.
-              </p>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/topics5days_fake.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Topics in the news up to 5 days from <i>fake news</i> tweets.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-              <p align="justify">
-                From this naive approach, we can pair up the news from 1 and 5 day intervals - to try to filter out the regular news
-                that might not be targeted by his tweets. With this approach no formal conclusions can be made.
-                Another "intuitive" but thus possibly wrong conclusion might be that unmatched long term topics are actually targeted
-                by such tweets, in this case: Ethics, Military, Climate Change, Foreign Policy and Environment.
-                <br /><br />
-                We do not have the expertise to test the hypothesis in such settings (news and social sciences). One of the presumptions
-                and hypotheses could be that he is using "fake news" to diminish the effect of certain topics and media outlets by targeting
-                them on purpose. However, we did not test this hypothesis yet.
-
-
-              </p>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/fake15.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Overlay of the news up to 1 day and 5 days from <i>fake news</i> tweets.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-
-              <!--HILLARY-->
-              <h2 id="hillary" style="margin-top:20px;">And his opponent "Crooked" Hillary?</h2>
-              <p align="justify">
-                What does appear in the news when Hillary Clinton, his political oponent, is mentioned. Having very strongly expressed
-                his opinions of Hillary, along with calls for her imprisonment, can mentioning her be a scapegoat for some burning issues for Trump?
-                <br />
-                <br />
-                We can see especially numerous mentions during the campaign, peaking just before the elections, then significantly dropping in frequency.
-              </p>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/hillary_dist.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Frequency of Tweets containing text <i>hillary</i>, <i>crooked</i>, <i>clinton</i>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-              <p align="justify">
-                Long term unpaired topics are: Campaign Finance, Transparency, Legal Issues and Criminal Justice.
-                Short term unpaired topics are: Campaign and Ethics.
-                <br /><br />
-                Without hypothesis test we cannot conclude the significance, but it is peculiar how those topics relate closely
-                to his agenda about Hillary Clinton.
-              </p>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/hillary15.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Overlay of the news up to 1 day and 5 days from <i>Hillary Clinton</i> tweets.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-              <!--OBAMA-->
-              <h2 id="obama" style="margin-top:20px;">What about his predecessor, Barack Obama?</h2>
-              <p align="justify">
-                Barack Obama is the previous president of the United States. He has been called out by Trump directly on many occasions, infamously
-                for requests to see his birth certificate to confirm he is a citizen of the USA.
-                <br /><br />
-                Over the time we can see a very dense distribution of "obama" mentions in the tweets, noticably peaking just before the election night.
-                In general, he calls him out regularly even after the elections.
-              </p>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/obama_dist.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Frequency of Tweets containing text <i>obama</i>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/obama15.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Overlay of the news up to 1 day and 5 days from <i>obama</i> tweets.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <p align="justify">
-                Unmatched short term and long term news topics are more prominent here.
-                <ul>
-                  <li>
-                    Short term news topics (1 day after the tweet): Campaign Finance, Congress and Veterans.
-                  </li>
-                  <li>
-                    Long term news topics (5 days after the tweet): Environment, Trade, Civil Rights and Clinton Emails.
-                  </li>
-                </ul>
-
-                Coincidentally, some of those topics are the ones which Trump has fought actively to repeal the measures from the Obama presidency.
-              </p>
-
-
-            </div>
-
-            <!--WHAT IS IN THE TWEETS ON CERTAIN NEWS TOPICS-->
-            <div class="row" style="margin-top:40px;">
-              <h1 id="news_tweet">What is in the tweets on certain news topics?</h1>
-              <p align="justify">
-                We want to show the opposite now, when selected news topics are aired, what topics are in the Trump's Twitter feed.
-                This might provide a more detailed insight on what he tweets about, whom he mentions or tags.
-                <br /> <br />
-                Without certainty and formal testing, we presume that such behavior might be about deflecting and diminishing certain topics,
-                by mentioning provocative topics, calling out his opponents or asserting patriotism.
-              </p>
-
-              <!--RUSSIA FBI-->
-              <h2 id="russia_fbi" style="margin-top:20px;">In news: Russia and FBI</h2>
-              <p align="justify">
-                We explore one especially unpleasant set of topics for Donald Trump: Russia and FBI.
-                Displayed are the news occurences over time containing either of two terms.
-              </p>
-
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/news_russia_fbi.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      News occurences with topics <i>Russia</i> or <i>FBI</i>.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-              <p align="justify">
-                We display the occurrence of two topics from the tweets appearing up to 2 days after the news airing:
-                <ul>
-                  <li>
-                    Mention: CNN
-                  </li>
-                  <li>
-                    Hashtag: MAGA (Make America Great Again)
-                  </li>
-                </ul>
-              </p>
-
-              <!--MAGA CNN-->
-              <h2 id="maga" style="margin-top:20px;">MAGA, CNN - easy response?</h2>
-              <p align="justify">
-
-              </p>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/maga.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      <i>MAGA</i> hashtags after news containing <i>Russia</i> and <i>FBI</i> as topics.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/cnn.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Mentions of <i>CNN</i> after news containing <i>Russia</i> and <i>FBI</i> as topics.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-              <!--TREND OF REACTION-->
-              <h2 id="reaction" style="margin-top:20px;">Trend of reaction, peculiarity?</h2>
-              <p align="justify">
-                We put some of the highest occurrences of tweet topics in context with the news on topics of Russia and FBI as topics:
-                <ul>
-                  <li>
-                    Mentions: CNN, DRUDGE_REPORT (Drudge report is an American conservative right-wing news aggregation website)
-                  </li>
-                  <li>
-                    Hashtags: MAGA, MakeAmericaGreatAgain
-                  </li>
-                </ul>
-              </p>
-              <div class="row" style="margin-bottom:40px;">
-                <div class="col justify-content-center">
-                  <figure class="figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="Project/html/russia_fbi_maga_cnn.html"></iframe>
-                    </div>
-                    <figcaption class="figure-caption">
-                      Overlay of mentions: <i>DRUDGE_REPORT</i> and <i>CNN</i>; hashtags: <i>MAGA</i> and <i>MakeAmericaGreatAgain</i>
-                      on top of the news containing <i>Russia</i> and <i>FBI</i> as topics.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <p align="justify">
-                We can observe that after significant number of news topics with Russia, CNN or MAGA is mentioned.
-                Our presumption is that these responses might be to discredit the news outlets, while enforcing high level of patriotism
-                in contrast to Russian implications - in order to diminish the importance of the news.
-                <br /><br />
-                More apparently with FBI news topic, there is a sudden spike in CNN and DRUDGE_REPORT mentions, showing that Trump reacts
-                directly by referencing right-wing news aggregation website along with CNN.
-
-                <br /><br />
-                In order to make direct conclusions, we would have to consult pshycologicsts, news analysts, politicologists and experts in
-                social media and social sciences to provide a definite conclusion. Based on the data, we show the peculiarities we have observed, along
-                with our presumptions. It is an insight - not a ground truth or hypothesis.
-              </p>
-
-
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
-          </div>
-        </div>
-      </div>
+<nav id="main_nav" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="padding: 0px;"><img src="Project/images/logo.png" style="height: 100%; width: auto;"/></a>
+      <a class="navbar-brand" href="#">rump - Insights in 140 characters</a>
     </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#datastory">Data Story</a></li>
+        <li><a href="#datasets">Datasets</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div><!-- /.nav-collapse -->
+  </div><!-- /.container -->
+</nav>
 
-    <div class="container" id="datasets">
-      <div class="row row-offcanvas row-offcanvas-right">
-        <div class="col-sm-10 blog-main">
-          <h1 style="margin-top:50px;">Datasets</h1>
+<div class="container" id="datastory">
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-sm-10 blog-main">
+      <div class="jumbotron" >
+        <h1 id="insights">You are being watched!</h1>
+        <img class="img-responsive" src="Project/images/social_media.jpeg" style="margin-top:20px; margin-bottom:20px;"/>
+        <p align="justify">
+          Social media has become omnipresent and we (un)intentionally leave increasingly more information about ourselves: our opinions, habits, interests and beliefs.
+        </p>
+        <p align="justify">
+          The president of the United States is famous for being an avid Twitter user.
+          He is swift to express his opinion directly in a sometimes very raw manner.
+        </p>
+        <img class="img-responsive" src="Project/data/crooked_hilary.png" style="margin-top:20px; margin-bottom:20px;"/>
+        <p align="justify">
+          This habit of regular commenting on events and persons is a good opportunity to ask:
+          what insights can we gather from 140 characters of typed by POTUS?
+        </p>
+      </div>
+
+      <!--WHY POTUS TWEETS?-->
+      <div class="container-fluid">
+        <div class="row" style="margin-top:40px;">
+          <h1 id="why">Why POTUS Tweets?</h1>
           <p align="justify">
-            This project utilizes two datasets:
+            The President of the United States is a person with great power and control over the events in the world.
+            He is a representative of the state which is one of the major players in world stability: peace, economy, science and developmet among others.
+          </p>
+          <img class="img-responsive" src="Project/data/kim.png" style="margin-top:20px; margin-bottom:20px;"/>
+          <p align="justify">
+            With great power comes great responsibility, as the president should represent a role model for the nation, while being under constant scrutiny
+            of public and media. Donald Trump's Twitter feed represents an unique insight into mindset and opinions of a leader of a nation and a successful businessman.
+            Without hesitation and careful diplomatic consideration he is posting his opinions freely. In that freedom we also find inspiration to explore what might
+            he reveal about himself and find out more about @realDonaldTrump.
+          </p>
+        </div>
+
+        <!--DATA HAS IT ALL-->
+        <div class="row" style="margin-top:40px;">
+          <h1 id="analysis">Data has it all</h1>
+          <p align="justify">
+            What we publish on the Web does not disappear. This is a very important consequence for social media and our online presence.
+            Even if we seemingly delete an unfortunate image or post, chance is, it is still stored somewhere. This is emphasized to the extremes in cases of
+            celebrities and people of power, such as Donald Trump. Here we see a famous gaffe: a late night "covfefe" tweet. He has deleted the Tweet afterwards,
+            but it was already too late - everyone was talking about it.
+          </p>
+          <img class="img-responsive" src="Project/images/covfefe.jpg" style="margin-top:20px; margin-bottom:20px;"/>
+          <p align="justify">
+            In a similar fashion, Tweets are directly accessible to the public. Our opinions from many years, or a late night rant or drunken post - it is saved somewhere.
+            This is only one example of information we leave online: interactions, logs, likes and different metadata is also present to represent our online identity.
+          </p>
+
+          <div class="row" style="margin-top:40px; margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/tweet_map.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Map of the places in the world Donald Trump has tweeted from.
+                  Geodata has been subsequently disabled in most of the tweets.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <p align="justify">
+            We will use the public availability of Donald Trump tweets to gather some insights on his use of Twitter, his habits, reactions and sentiment throughout the years.
+            Moreover, we will look from different approaches his reactions to the news articles about him or his cabinet in the White House.
+          </p>
+
+          <!--WHO POSTS FROM @REAL DONALD TRUMP-->
+          <h2 id="devices" style="margin-top:20px;">Who posts from @realDonaldTrump</h2>
+          <p align="justify">
+            Donald Trump is a businessman, celebrity, media personality and a president. From the emergence of his Twitter account in 2009. he has posted many tweets, but it is
+            certain that he has social media managers for elements of his media presence.
+          </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/utilities_posted.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Distribution of the devices used to post Tweets.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <p align="justify">
+            The majority of the tweets were posted from Android, which is a device of choice for mr. Trump. We can see other utilities,
+            such as iPhone or Web Client being prominent as well. Since Donald Trump has been noted to
+            <a href="http://fortune.com/2017/01/01/trump-doesnt-trust-computers/">rarely use computers</a>
+            we can for now assume the posts he made are originating from Android. That is a significant amount of Tweets that are approved,
+            but not directly penned by Donald Trump.
+          </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/utilities_daily_frequency.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Tweet frequency by Android and iPhone devices
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <p align="justify">
+            Since becoming POTUS, many concerns were raised for using an insecure Android device. Thus, Trump has
+            <a href="https://www.theguardian.com/technology/2017/mar/20/bye-bye-android-has-donald-trump-finally-upgraded-his-phone">switched to iPhone</a>.
+
+            This is visible from the Twitter data as well: the last Tweet posted from Android is on <b>25th of March, 2017</b>, keeping his promise of using a more secure device.
+            Seeing that iPhone has been used before as well in parallel, it could be either his social media maganers or himself.
+          </p>
+
+          <!--USER ENGAGEMENT-->
+          <h2 id="dev_popularity" style="margin-top:20px;">User engagement</h2>
+          <p align="justify">
+            How did becoming a POTUS change the landscape of interaction of users with his Tweets? Let us find out!
+            We count favoriting a tweet and retweeting different metrics of level of interaction.
+          </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/favorite_rt_count_time.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Engagement of the users over time - Favorites and Retweets
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <p align="justify">
+            It is evident that since <a href="https://www.theguardian.com/us-news/2015/jun/16/donald-trump-announces-run-president">declaring candidacy</a>
+            on June 16th, 2015, his Twitter account has seen a steady increase in interactions - signs of undergoing campaign and supporters flowing in.
+            A sharp peak can be seen in November 2016 - exactly when the US presidential elections that Trump won took place.
+          </p>
+
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/android_favorite_rt_count_time.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Engagement of the users over time - Favorites and Retweets for Tweets from Android device
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <p align="justify">
+            Comparing the devices used to post: Android and iPhone, we can observe slight differences.
+            If we consider Trump using his Android phone until March (when there is a halt from that device), iPhone has been used
+            presumably by his social media and campaing managers to promote him as a candidate.
+            <br />
+            <br />
+            In general more popular tweets have come from Donald Trump himself, notable popular examples suggest presidential victory.
+            and inauguration as important events, besides other peaks that can be observed.
+            After March 2017, it is more difficult to track the author
+            solely by relying on the presumption of the device used.
+          </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/iphone_favorite_rt_count_time.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Engagement of the users over time - Favorites and Retweets for Tweets from iPhone device
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!--Tweets popularity-->
+          <div class="row" style="margin-bottom:40px;">
+            <h1 id="tweets_popularity" style="margin-top:20px;">Tweets popularity</h1>
+            <p align="justify">
+              Analysing the social-media platform interactions is a two way street as we can take into consideration,
+              on the one hand the author and, on the other hand, the followers that engage with the tweets.
+              <br/>
+              There are two quantifiable forms of involvement with one's tweets of their followers recorded in our data:
+              favorites count and retweets count. Out of these two, we consider the favorites count more insightful as
+              it reflects the appreciation of the users.
+              <br/>
+              Let's take a look into the details of the most popular tweets of Donald Trump comparing three periods:
+            </p>
             <ul>
-              <li>
-                <a href="http://www.trumptwitterarchive.com/">Trump Twitter Archive</a>
-              </li>
-              <li>
-                <a href="archive.org/details/tv?factchecks">Fact Checked TV News Archive</a>
-              </li>
+              <li>Before presidential candidacy announcement</li>
+              <li>During the candidacy</li>
+              <li>After winning the election</li>
             </ul>
-            The main objective was to utilize datasets with highest possible ground truth for further analysis.
-          </p>
-        </div>
-      </div>
-    </div>
+            <p align="justify">
+              But first, let's define popular as being in the top 10% of the most liked tweets in that period.
+            </p>
 
-    <div class="container" id="about" >
-      <div class="row row-offcanvas row-offcanvas-right">
-        <div class="col-sm-10 blog-main">
-          <h1 style="margin-top:50px;">About</h1>
+            <div class="row" style="margin-bottom:40px;">
+              <div class="col justify-content-center">
+                <figure class="figure">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="Project/html/popular_tweets.html"></iframe>
+                  </div>
+                  <figcaption class="figure-caption">
+                    Trump's 10% most popular tweets split related to his candidacy
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <p align="justify">
+              As expected, given the periods span over different timeframes, 10% of each represents a different value,
+              but as mentioned before, since becoming a candidate for the White House, there is a lot more activity on his account.
+            </p>
+            <br/> <br/>
+          </div>
+          <div class="row" style="margin-bottom:40px;">
+            <h2 id="popular_entities" style="margin-top:20px;">Tweets entities analysis</h2>
+            <br/>
+            <p>
+              Do these tweets present interesting patterns to why they gathered the appreciation? We can try to find that
+              out by first looking at the hashtags and user-mentions in them.
+            </p>
+
+            <div class="row" style="margin-bottom:40px;">
+              <div class="col justify-content-center">
+                <figure class="figure">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="Project/html/hashtag_pre_candidacy.html"></iframe>
+                  </div>
+                  <figcaption class="figure-caption">
+                    Hashtags in popular tweets from before his candidacy announcement
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom:40px;">
+              <div class="col justify-content-center">
+                <figure class="figure">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="Project/html/hashtag_during_candidacy.html"></iframe>
+                  </div>
+                  <figcaption class="figure-caption">
+                    Hashtags in popular tweets while running for president
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom:40px;">
+              <div class="col justify-content-center">
+                <figure class="figure">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="Project/html/hashtag_since_president.html"></iframe>
+                  </div>
+                  <figcaption class="figure-caption">
+                    Hashtags in popular tweets since he became the President of the United States of America
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <p>
+              We can remark that Trump's followers engaged the most with tweets containing his campaign slogans and mentions to his opponent,
+              while the tv-shows-related hashtags from before dissappeared from his top tweets.
+              <br />
+              Now we can take a look at the user mentions in these tweets.
+            </p>
+            <div class="row" style="margin-bottom:40px;">
+              <div class="col justify-content-center">
+                <figure class="figure">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="Project/html/user_mentions_pre_candidacy.html"></iframe>
+                  </div>
+                  <figcaption class="figure-caption">
+                    User mentions in popular tweets from before his candidacy announcement
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="row" style="margin-bottom:40px;">
+              <div class="col justify-content-center">
+                <figure class="figure">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="Project/html/user_mentions_during_candidacy.html"></iframe>
+                  </div>
+                  <figcaption class="figure-caption">
+                    User mentions in popular tweets while running for president
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="row" style="margin-bottom:40px;">
+              <div class="col justify-content-center">
+                <figure class="figure">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="Project/html/user_mentions_since_president.html"></iframe>
+                  </div>
+                  <figcaption class="figure-caption">
+                    User mentions in popular tweets since he became the President of the United States of America
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <p>
+              Shifting our focus to the user mentions during the candidacy period, we observe that the twitter-handle
+              with the highest count in the top 10% of the most popular tweets is @realDonalTrump himself.
+              This is explained by the fact that these are retweets and, being between the most favorited ones,
+              his followers do appreciate them significantly.
+              As they are all supportive tweets, one reason for them being in top 10% would be that his followers
+              appreciate, most importantly, seeing Donald Trump engaging with his community.
+              <br/> <br/>
+              As a pattern that can be observed in the user mentions is that in every period there was a proeminent subject in his most popular tweets:
+              Barak Obama in the pre-candidacy time frame, Hilary Clinton and a few news outlets during his candidacy and
+              news outlets in principal since after the election.
+            </p>
+          </div>
+          <div class="row" style="margin-bottom:40px;">
+            <h2 id="vocab_insight" style="margin-top:20px;">Vocabulary insight from the top 10% most favorited tweets</h2>
+            <br/>
+            <p>
+              Earlier we only looked at the hashtags and user mentions which, to some extent, are representative for the tweets.
+              We now want to have a more detailed insight into the words he uses in the tweets that resonate the most with his followers.
+              <br/>
+              Hence, applying the same procedure as with the entities, we can visualize in a separate word-clouds
+              what words make up his most popular tweets.
+            </p>
+            <figure class="figure">
+              <img class="img-responsive" src="Project/images/Words%20in%20popular%20tweets%20before%20candidacy.png" style="margin-top:20px; margin-bottom:20px;"/>
+            </figure>
+            <figure class="figure">
+              <img class="img-responsive" src="Project/images/Words%20in%20popular%20tweets%20during%20the%20candidacy.png" style="margin-top:20px; margin-bottom:20px;"/>
+            </figure>
+            <figure>
+              <img class="img-responsive" src="Project/images/Words%20in%20popular%20tweets%20after%20the%20election.png" style="margin-top:20px; margin-bottom:20px;"/>
+            </figure>
+            <p>
+              There is rather no surprise: the same tendencies of a proeminent subject, that we noted while analysing the
+              hashtags and user-mentions, we can also observe it at the level of words he uses.
+            </p>
+          </div>
+          <div class="row" style="margin-bottom:40px;">
+            <h2 id="vocab_insight_pos" style="margin-top:20px;">Part-of-speech based vocabulary insight</h2>
+            <br/><br/>
+            <p>
+              Firstly, the visualization above, even though is split by period, it is rather coarse-grained and we are wondering,
+              what if there are more insights if we look at most popular tweets with other glasses. Specifically, what could we
+              observe if instead of splitting the tweets by period, we just take the top 10% most liked ones and group them
+              by the part-of-speech they represent. Let's see below, what this gives us!
+            </p>
+
+            <figure>
+              <img class="img-responsive" src="Project/images/Verbs%20in%20popular%20tweets.png" style="margin-top:20px; margin-bottom:20px;"/>
+            </figure>
+
+            <figure>
+              <img class="img-responsive" src="Project/images/Adverbs%20in%20popular%20tweets.png" style="margin-top:20px; margin-bottom:20px;"/>
+            </figure>
+
+            <figure>
+              <img class="img-responsive" src="Project/images/Nouns%20in%20popular%20tweets.png" style="margin-top:20px; margin-bottom:20px;"/>
+            </figure>
+
+            <figure>
+              <img class="img-responsive" src="Project/images/Adjectives%20in%20popular%20tweets.png" style="margin-top:20px; margin-bottom:20px;"/>
+            </figure>
+            <p>
+              Our hunch proved to be fruitful! Having this view over the 10% most liked tweets gives us a better insight into
+              the words he uses. Looking at the verbs, the most common ones are <strong>be</strong>, <strong>do</strong>
+              and <strong>have</strong> which appeal to the basic aspirations of a human being.
+              Also noticeable is the high usage of the adverb <strong>very</strong> which denotes a rather simplistic language
+              that is welcomed by his followers. This, on the other hand. allows him to emphasize his point of view in a fairly easy way.
+            </p>
+            <br/>
+            <p>
+              In order to not influence the reader towards some specific insight, we leave the two other parts of speech
+              to be freely analysed and we continue to the next section.
+            </p>
+          </div>
+
+        <!--IN THE NEWS: TRUMP AND HIS ADMINISTRATION-->
+        <div class="row" style="margin-top:40px;">
+          <h1 id="news">In the news: Trump and his Administration</h1>
           <p align="justify">
-            This project has been done as part of Applied Data Analysis (CS-401) course at EPFL, winter 2017.
-
-            Code is available in the <a href="https://github.com/baetuc/ADA-CS-401/tree/master/Project">GitHub repository</a>.
+            Being a public persona, businessman and politician has enabled Trump to leave his mark on the news:
+            interviews, reports and a variety of press coverage.
+            <br /><br />
+            We can gain an insight on what has Trump opinionated on strongly enough that it has managed to reach the news.
+            From businessman and a TV personality to politician and president - we can gain insights on interests and critique
+            of Donald Trump and his closest associates. This can also give an insight on his political agenda, as well as
+            shed light on issues that either trouble his presidency or he actively tackles.
           </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/top50_topics.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Top 50 topics from the news including Trump and his Cabinet - from 2009 to 2017
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!--NEWS TOPICS OVER THE YEARS-->
+          <h2 id="topics_years" style="margin-top:20px;">News topics over the years</h2>
+          <p align="justify">
+            A historical insight shows the best the evolution of interests of Donald Trump, reflected in the news.
+            From 2009 when the data has been first collected, we can observe that number of topics has been growing over time:
+            Donald Trump engaging more into public life besides entertainment. Likewise, the variety of topics is increasing as well,
+            - close with his political or personal agenda.
+          </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/top_topics2009.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Top 20 news topics of Trump in 2009.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/top_topics2010.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Top 20 news topics of Trump in 2010.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/top_topics2011.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Top 20 news topics of Trump in 2011.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/top_topics2012.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Top 20 news topics of Trump in 2012.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/top_topics2013.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Top 20 news topics of Trump in 2013.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/top_topics2014.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Top 20 news topics of Trump in 2014.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/top_topics2015.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Top 20 news topics of Trump in 2015.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/top_topics2016.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Top 20 news topics of Trump in 2016.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/top_topics2017.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Top 20 news topics of Trump and his Cabinet in 2017.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!--WHAT IS THIS ADMINISTRATION ABOUT?-->
+          <h2 id="topics_cabinet" style="margin-top:20px;">What is this administration about?</h2>
+          <p align="justify">
+            News cover not only the statements of politicians, but also provides a critique and other reports in connection to them.
+            One such example is the <a href="https://www.theguardian.com/us-news/2017/dec/16/republicans-trying-to-kill-off-trump-russia-investigation-says-adam-schiff">Russian-ties investigation</a>
+            or some legal issues that have been brought up.
+            <br /><br />
+            We show the top 20 topics in the news that have appeared since Donald Trump taking office in 2017.
+          </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/top_10_administration_news.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Top 20 news topics of the Trump administration - since taking office from 20th of January, 2017.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <p align="justify">
+            We can see the political agenda clearly: immigrants and homeland security being the first topic,
+            while crime and Russia also take a significant place in the distribution of the news topics.
+          </p>
+        </div>
+
+        <!--WHAT IS IN THE NEWS ON CERTAIN TWEET TOPICS-->
+        <div class="row" style="margin-top:40px;">
+          <h1 id="tweet_news">What is in the news on certain tweet topics?</h1>
+          <p align="justify">
+            Since his Twitter feed is a free outlet of his thoughts and opinions, we are interested if we can observe certain trends
+            in reaction to the topics of the news. Social media and social herding has a very powerful effect Trump must be aware of,
+            can we observe if he uses his online voice to strengthen his position among his followers and create a context that
+            is different from the news reports.
+            <br />
+            <br />
+            We will look into what topics are in the news when he tweets about certain topics: hashtags, mentions or simply parts of tweets
+            that containt a defined phrase.
+          </p>
+
+          <!--FAKE NEWS-->
+          <h2 id="fake" style="margin-top:20px;">Fake news?</h2>
+          <p align="justify">
+            <i>Fake news</i> has become an infamous term used by Donald Trump frequently to discard news and lable media outlets as "fake".
+            These reactions are usually to news coverage that is not benevolent towards policies and critique his stances and appriaches.
+            We can notice that "fake news" has emerged since end of 2016 - just about when he was to take the office as POTUS.
+            The frequency has been relatively spread out, with certain significant mentions from the news appearing on the days with most frequent "fake news" tweets:
+          <ul>
+            <li>
+              September 30th 2017 - criticism on Puerto Rican hurricane response and Alabama preliminaries.
+            </li>
+            <li>
+              August 7th 2017 - 200 days of Trump Administration
+            </li>
+            <li>
+              May 28th 2017 - Montana special Congressional race
+            </li>
+          </ul>
+          </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/fake_tweet_freq.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Frequency of Tweets containing text <i>fake news</i> or hashtags: <i>FNN</i>, <i>FakeNews</i>, <i>FraudNewsCNN</i>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <p align="justify">
+            After we have localized the tweets containing "fake news" as a topic, we will show what topics in the news occur in the
+            immediate time period of 1 day after publishing such tweets.
+          </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/topics1days_fake.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Topics in the news up to 1 day from <i>fake news</i> tweets.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <p align="justify">
+            To see whether the news topic has been significant, we will also check all the news topics 5 days after the publishing
+            of the "fake news" tweets, in practical terms - what is the more average distribution of news in that period.
+          </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/topics5days_fake.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Topics in the news up to 5 days from <i>fake news</i> tweets.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <p align="justify">
+            From this naive approach, we can pair up the news from 1 and 5 day intervals - to try to filter out the regular news
+            that might not be targeted by his tweets. With this approach no formal conclusions can be made.
+            Another "intuitive" but thus possibly wrong conclusion might be that unmatched long term topics are actually targeted
+            by such tweets, in this case: Ethics, Military, Climate Change, Foreign Policy and Environment.
+            <br /><br />
+            We do not have the expertise to test the hypothesis in such settings (news and social sciences). One of the presumptions
+            and hypotheses could be that he is using "fake news" to diminish the effect of certain topics and media outlets by targeting
+            them on purpose. However, we did not test this hypothesis yet.
+
+
+          </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/fake15.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Overlay of the news up to 1 day and 5 days from <i>fake news</i> tweets.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+
+          <!--HILLARY-->
+          <h2 id="hillary" style="margin-top:20px;">And his opponent "Crooked" Hillary?</h2>
+          <p align="justify">
+            What does appear in the news when Hillary Clinton, his political oponent, is mentioned. Having very strongly expressed
+            his opinions of Hillary, along with calls for her imprisonment, can mentioning her be a scapegoat for some burning issues for Trump?
+            <br />
+            <br />
+            We can see especially numerous mentions during the campaign, peaking just before the elections, then significantly dropping in frequency.
+          </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/hillary_dist.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Frequency of Tweets containing text <i>hillary</i>, <i>crooked</i>, <i>clinton</i>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <p align="justify">
+            Long term unpaired topics are: Campaign Finance, Transparency, Legal Issues and Criminal Justice.
+            Short term unpaired topics are: Campaign and Ethics.
+            <br /><br />
+            Without hypothesis test we cannot conclude the significance, but it is peculiar how those topics relate closely
+            to his agenda about Hillary Clinton.
+          </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/hillary15.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Overlay of the news up to 1 day and 5 days from <i>Hillary Clinton</i> tweets.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!--OBAMA-->
+          <h2 id="obama" style="margin-top:20px;">What about his predecessor, Barack Obama?</h2>
+          <p align="justify">
+            Barack Obama is the previous president of the United States. He has been called out by Trump directly on many occasions, infamously
+            for requests to see his birth certificate to confirm he is a citizen of the USA.
+            <br /><br />
+            Over the time we can see a very dense distribution of "obama" mentions in the tweets, noticably peaking just before the election night.
+            In general, he calls him out regularly even after the elections.
+          </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/obama_dist.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Frequency of Tweets containing text <i>obama</i>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/obama15.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Overlay of the news up to 1 day and 5 days from <i>obama</i> tweets.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <p align="justify">
+            Unmatched short term and long term news topics are more prominent here.
+          <ul>
+            <li>
+              Short term news topics (1 day after the tweet): Campaign Finance, Congress and Veterans.
+            </li>
+            <li>
+              Long term news topics (5 days after the tweet): Environment, Trade, Civil Rights and Clinton Emails.
+            </li>
+          </ul>
+
+          Coincidentally, some of those topics are the ones which Trump has fought actively to repeal the measures from the Obama presidency.
+          </p>
+
+
+        </div>
+
+        <!--WHAT IS IN THE TWEETS ON CERTAIN NEWS TOPICS-->
+        <div class="row" style="margin-top:40px;">
+          <h1 id="news_tweet">What is in the tweets on certain news topics?</h1>
+          <p align="justify">
+            We want to show the opposite now, when selected news topics are aired, what topics are in the Trump's Twitter feed.
+            This might provide a more detailed insight on what he tweets about, whom he mentions or tags.
+            <br /> <br />
+            Without certainty and formal testing, we presume that such behavior might be about deflecting and diminishing certain topics,
+            by mentioning provocative topics, calling out his opponents or asserting patriotism.
+          </p>
+
+          <!--RUSSIA FBI-->
+          <h2 id="russia_fbi" style="margin-top:20px;">In news: Russia and FBI</h2>
+          <p align="justify">
+            We explore one especially unpleasant set of topics for Donald Trump: Russia and FBI.
+            Displayed are the news occurences over time containing either of two terms.
+          </p>
+
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/news_russia_fbi.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  News occurences with topics <i>Russia</i> or <i>FBI</i>.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <p align="justify">
+            We display the occurrence of two topics from the tweets appearing up to 2 days after the news airing:
+          <ul>
+            <li>
+              Mention: CNN
+            </li>
+            <li>
+              Hashtag: MAGA (Make America Great Again)
+            </li>
+          </ul>
+          </p>
+
+          <!--MAGA CNN-->
+          <h2 id="maga" style="margin-top:20px;">MAGA, CNN - easy response?</h2>
+          <p align="justify">
+
+          </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/maga.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  <i>MAGA</i> hashtags after news containing <i>Russia</i> and <i>FBI</i> as topics.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/cnn.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Mentions of <i>CNN</i> after news containing <i>Russia</i> and <i>FBI</i> as topics.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!--TREND OF REACTION-->
+          <h2 id="reaction" style="margin-top:20px;">Trend of reaction, peculiarity?</h2>
+          <p align="justify">
+            We put some of the highest occurrences of tweet topics in context with the news on topics of Russia and FBI as topics:
+          <ul>
+            <li>
+              Mentions: CNN, DRUDGE_REPORT (Drudge report is an American conservative right-wing news aggregation website)
+            </li>
+            <li>
+              Hashtags: MAGA, MakeAmericaGreatAgain
+            </li>
+          </ul>
+          </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/russia_fbi_maga_cnn.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Overlay of mentions: <i>DRUDGE_REPORT</i> and <i>CNN</i>; hashtags: <i>MAGA</i> and <i>MakeAmericaGreatAgain</i>
+                  on top of the news containing <i>Russia</i> and <i>FBI</i> as topics.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <p align="justify">
+            We can observe that after significant number of news topics with Russia, CNN or MAGA is mentioned.
+            Our presumption is that these responses might be to discredit the news outlets, while enforcing high level of patriotism
+            in contrast to Russian implications - in order to diminish the importance of the news.
+            <br /><br />
+            More apparently with FBI news topic, there is a sudden spike in CNN and DRUDGE_REPORT mentions, showing that Trump reacts
+            directly by referencing right-wing news aggregation website along with CNN.
+
+            <br /><br />
+            In order to make direct conclusions, we would have to consult pshycologicsts, news analysts, politicologists and experts in
+            social media and social sciences to provide a definite conclusion. Based on the data, we show the peculiarities we have observed, along
+            with our presumptions. It is an insight - not a ground truth or hypothesis.
+          </p>
+
+
         </div>
       </div>
     </div>
-  </body>
+    <div class="col-sm-2">
+      <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container" id="datasets">
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-sm-10 blog-main">
+      <h1 style="margin-top:50px;">Datasets</h1>
+      <p align="justify">
+        This project utilizes two datasets:
+      <ul>
+        <li>
+          <a href="http://www.trumptwitterarchive.com/">Trump Twitter Archive</a>
+        </li>
+        <li>
+          <a href="archive.org/details/tv?factchecks">Fact Checked TV News Archive</a>
+        </li>
+      </ul>
+      The main objective was to utilize datasets with highest possible ground truth for further analysis.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="about" >
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-sm-10 blog-main">
+      <h1 style="margin-top:50px;">About</h1>
+      <p align="justify">
+        This project has been done as part of Applied Data Analysis (CS-401) course at EPFL, winter 2017.
+
+        Code is available in the <a href="https://github.com/baetuc/ADA-CS-401/tree/master/Project">GitHub repository</a>.
+      </p>
+    </div>
+  </div>
+</div>
+</body>
 </html>

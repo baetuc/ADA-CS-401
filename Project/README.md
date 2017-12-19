@@ -36,7 +36,7 @@ Therefore, we adapted the scope of the research, continuing on the topic of insi
 
 ## List of contributions
 * Viktor: initial data analysis (general Trump Tweets: geolocation, followers over time, device used to tweet, trend on retweets and favorites; Internet archive - Trump TV news factchecks), news+twitter dataset work and insights. Initial plotly plots and github page base+writeup of the part worked on.
-* Cip:
+* Cip: different ways of interpreting the sentiment in tweets: emotion, counting of bad words, using open-source libraries and Google API for Natural Language; statistical tests for change of sentiment over time and further analysis; conclusions of sentiment analysis + web page sections for all the mentioned parts.
 * Doru: distribution of tweets, favorites and retweets over years and months, popular tweets analysis (patterns in the hashtags, user-mentions and vocabulary analysis with POS tagging) + writeup of the part I worked on.
 
 ## A list of internal milestones up until project milestone 3

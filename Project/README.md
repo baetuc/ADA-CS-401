@@ -37,7 +37,7 @@ Therefore, we adapted the scope of the research, continuing on the topic of insi
 ## List of contributions
 * Viktor: initial data analysis (general Trump Tweets: geolocation, followers over time, device used to tweet, trend on retweets and favorites; Internet archive - Trump TV news factchecks), news+twitter dataset work and insights. Initial plotly plots and github page base+writeup of the part worked on.
 * Cip:
-* Doru:
+* Doru: distribution of tweets, favorites and retweets over years and months, popular tweets analysis (patterns in the hashtags, user-mentions and vocabulary analysis with POS tagging) + writeup of the part I worked on.
 
 ## A list of internal milestones up until project milestone 3
 * Finalizing the data analysis
@@ -57,3 +57,6 @@ We are thankful for insights provided by the professor and the TA team who have 
 
 ## Online NB viewer link
 http://nbviewer.jupyter.org/github/baetuc/ADA-CS-401/blob/master/Project/Project.ipynb
+
+## Github pages link
+https://baetuc.github.io/ADA-CS-401/

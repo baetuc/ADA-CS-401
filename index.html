@@ -911,6 +911,110 @@
 
 
         </div>
+
+        <!--Tweets sentiment analysis-->
+        <div class="row" style="margin-top:40px;">
+          <h1 id="tweets_evolve">How does tweets sentiment evolve over time?</h1>
+          <p align="justify">
+            In the last part of the analysis, we inspect the tweet sentiment evolution over time. There is the possibility that Trump tried
+             to become a "better person" during the elections period, such that in this way he could win the hearts of the voters. Let's see
+             what is the reality, though.
+
+          <!--Google API-->
+          <h2 id="google_api" style="margin-top:20px;">Using Google Natural Language API</h2>
+          <p align="justify">
+            In order to assign a sentiment to each tweet, we used the Google Natural Language API for
+            <a href="https://cloud.google.com/natural-language/docs/sentiment-tutorial">Sentiment Analysis</a>. The API computes a score
+            between -1 and 1 for each tweet, -1 being assigned to a very negative tweet and 1 to a positive one. <br/><br/>
+
+            Having these scores, it is interesting to see how is the average sentiment of Trump's tweets evolving over time:
+          </p>
+
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/average_sentiment.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  The average sentiment of Trump's tweets, considered over every two months.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <p align="justify">
+            As the attentive reader might observe, there are two consistent decreasing trends in the plot: one around 2012, and the other around 2016. Considering
+            the political context during these two periods, one might find that, during the two aforementioned years, presidency elections took
+            place in the US.
+          </p>
+
+          <!--Statistical tests-->
+          <h2 id="statistical_tests" style="margin-top:20px;">Using statistics for validating hypothesis</h2>
+          <p align="justify">
+            In the light of the previous information, a hypothesis becomes more and more probable: is it possible that Donald Trump uses negative
+            tweets to fight against the opposition during elections? For validating the hypothesis, we first need to perform a statistical test
+            on the available data. <br/><br/>
+
+            Applying a student t-test, we can find p-values <b>lower than 0.001</b> that confirms that the average sentiment during the elections
+            period is lower than the average sentiment during the period between the elections.
+          </p>
+
+          <!--Further analysis-->
+          <h2 id="further_analysis" style="margin-top:20px;">Further analysis</h2>
+          <p align="justify">
+            Anyway, it is possible that the negativity in his tweets might have been caused by other factors other than the presidency campaigns,
+            and that the correlation is only accidental. We tried to exclude that possibility, by further analysis of the datasets. <br/><br/>
+
+            For that, we analyzed the most used words in the negative tweets during both presidential campaigns, to see if they are related
+            to the presidential campaign. The results are presented in the bar plots below:
+          </p>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/top5_2012.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Top 5 most used words in tweets with negative sentiment during the 2012 campaign
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom:40px;">
+            <div class="col justify-content-center">
+              <figure class="figure">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="Project/html/top5_2016.html"></iframe>
+                </div>
+                <figcaption class="figure-caption">
+                  Top 5 most used words in tweets with negative sentiment during the 2016 campaign
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <p align="justify">
+            As we can see, the top 5 words during 2012 campaign include <i>barackobama</i> and <i>obama</i>, which implies that the negative tweets have
+             been mostly addressed to Barack Obama, one of the presidential cadidates. Also, between the top 5 words during 2016 campaign, there are the
+             words <i> Hillary</i> and <i>crooked</i>, which he used to refer to his direct opponent, Hillary Clinton. <br/><br/>
+          </p>
+
+          <!--Interpretations-->
+          <h2 id="sentiment_interpretation" style="margin-top:20px;">Results interpretation and conclusion</h2>
+          <p align="justify">
+            Therefore, considering all the previous facts, we consider that it's plausible for Trump to use a campaign strategy which involves
+             <b>attacking</b> his opponents in the media, instead of showing the good aspects of his own person. Even though he did not run for
+             presidency in 2012, he still attacked Obama during the campaign, probably because he wanted to win the hearts of the voters
+             before running for 2016 presidency. <br/><br/>
+
+             With more analysis like this, we can raise awareness among the population about the techniques used by the presidential contestants,
+             all around the globe. If we want to have a better world, in which everyone tries to improve himself, and not to find faults of the
+             others, we need to support this kind of behaviour, and to realize that the change starts with <b>ourselves</b>.
+          </p>
+
+      </div>
+
       </div>
     </div>
     <div class="col-sm-2">
